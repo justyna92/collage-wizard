@@ -1,0 +1,220 @@
+body {
+	font-family: "Consolas";
+	font-size: 18px;
+	background-image: url("../../css/background/whitey.png");
+}
+
+.fields4_size {
+	width: 50%;
+	height: 50%;
+	line-height: 400%; /* div's height*/
+}
+
+.fields4_1 {
+    background-color: #ccffdd;
+	float:left;
+	border-width: 4px 2px 2px 4px;
+}
+
+.fields4_2 {
+    background-color: #99bbff;
+	float:left;
+	border-width: 4px 4px 2px 2px;
+}
+
+.fields4_3 {
+    background-color: #ffb3e6;
+	float:left;
+	border-width: 2px 2px 4px 4px;
+}
+
+.fields4_4 {
+    background-color: #ffff80;
+	display:inline-block;
+	border-width: 2px 4px 4px 2px;
+}
+
+.fields3_1 {
+	width:400px; 
+	height:600px;
+    background-color: #ccffdd;
+	float:right;
+	line-height: 600px;
+	border-width: 4px 4px 4px 2px;
+}
+
+.fields3_2 {
+	width:400px; 
+	height:300px;
+	background-color: #99bbff; 
+	display: float;
+	border-width: 4px 2px 2px 4px;
+}
+
+.fields3_3 {
+	width:400px; 
+	height:300px;
+    background-color: #ffb3e6; 
+	display: inline-block;
+	border-width: 2px 2px 4px 4px;
+}
+
+.fields3_4 { 
+	display:none;
+}
+
+.text-center-align {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 4em;
+}
+
+#btn1upload {
+	background-image: url("../../css/upload_img/1img.png");
+}
+
+#btn2upload {
+	background-image: url("../../css/upload_img/2img.png");
+}
+
+#btn3upload {
+	background-image: url("../../css/upload_img/3img.png");
+}
+
+#btn4upload {
+	background-image: url("../../css/upload_img/4img.png");
+}
+
+.btn-property {
+    width: 100px;
+    height: 40px;
+    border-radius: 1px;
+    border-width: 2px;
+    border-style: outset;
+    margin: 0px 10px 20px 20px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	float:left;
+}
+
+.btn-upload {
+	background-position: center;
+}
+
+.submit {
+	margin: 0px 10px 20px 20px;
+}
+
+.submit input {
+	width: 100px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn-property:active {
+	cursor: pointer;
+	border-style: inset;
+}
+
+
+.btn-upload input[type=file] {
+    display: block !important;
+    width: 100px !important;
+    height: 40px !important;
+    opacity: 0 !important;
+}
+
+.error {
+	display: none;
+	color: red;
+	font-size: inherit;
+	font-weight: bold;
+	width: 210px;
+	height: 100px;
+	text-align: justify;
+	margin: 0px 10px 20px 20px;
+	
+}
+
+#radioForm {
+	margin: 20px 0px 20px 20px;
+}
+
+input[type=submit] {
+	display: inline;
+}
+
+.remove-text {
+	display: none;
+}
+
+input[type=submit] {
+	background-color: #e60000;
+	color: white;
+}
+
+#download {
+	background-color: #cc0066;
+	width: 210px;
+}
+
+.border {
+	border-style: solid;
+	border-color: black;
+}
+
+.hide-btn {
+	display: none;
+}
+
+.container-height {
+	min-height: 500px;
+}
+
+#wizard {
+	height: 600px; 
+	width: 800px; 
+	float: left;
+}
+.mobile {
+	
+}
+@media (max-width: 992px){
+    #wizard {
+		width: 100%;
+		height: 100%;
+		
+	}
+	
+	.mobile {
+		
+	}
+}
+
+#ctrl-panel {
+	min-height: 600px; 
+	width: 250px; 
+	display: inline-block;
+}
+
+.footer-property {
+	margin: 20px 0px 20px 0px;
+	text-align: center;
+}
+
+p.title{
+	color:white;
+	text-align: center;
+	font-size: 2em;
+}
+
+.technologiesList{
+	font-size: 1.5em;
+	list-style: none;
+	text-align: center;
+	padding-right: 20px;
+    padding-left: 20px;
+}

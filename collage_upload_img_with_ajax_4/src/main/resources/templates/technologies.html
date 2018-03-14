@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<th:block th:replace="fragments/header :: include-head"/>
+</head>
+<body>
+	
+	<th:block th:replace="fragments/header :: include-menu"/>
+	
+
+	<div class="container container-height">
+		<div class="starter-template">
+			<p class="title">Applied technologies:</p>
+			<ul class="technologiesList">
+				<li th:each="item : ${technologies}" 
+				    	th:text="${item}">
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<th:block th:replace="fragments/footer :: include-footer" />
+
+</body>
+</html>

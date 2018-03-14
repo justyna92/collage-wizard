@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<th:block th:fragment="include-head">
+	
+		<title>Collage wizard</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" th:href="@{/css/main.css}" href="../../css/main.css" />
+	
+	</th:block>
+</head>
+<body>
+	<th:block th:fragment="include-menu">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" th:href="@{#}">Collage wizard</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a th:href="@{/}">Home</a></li>
+					<li class="active"><a th:href="@{/technologies}">Technologies</a></li>
+				</ul>
+			</div>
+		</nav>
+	</th:block>
+</body>
+</html>

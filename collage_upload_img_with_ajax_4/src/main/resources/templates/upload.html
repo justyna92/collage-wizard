@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<th:block th:replace="fragments/header :: include-head"/>
+</head>
+<body onload="radioForm.reset();">
+
+	<th:block th:replace="fragments/header :: include-menu"/>
+
+	<div class="container container-height">
+		<div class="starter-template">
+
+			<div id="wizard" >
+
+				<div id="first_image" class=" mobile fields4_size fields4_1 text-center-align border">
+					<span>1</span>
+				</div>
+				<div id="second_image" class=" mobile fields4_size fields4_2 text-center-align border">
+					<span>2</span>
+				</div>
+				<div id="third_image" class="mobile fields4_size fields4_3 text-center-align border">
+					<span>3</span>
+				</div>
+				<div id="fourth_image" class="mobile fields4_size fields4_4 text-center-align border">
+					<span>4</span>
+				</div>
+
+
+			</div>
+			<div id="ctrl-panel" >
+				<form id="radioForm">
+					<input type="radio" id="radio1" name="number-of-fields" onclick="changeFieldsTo4()" checked="checked" /> 
+					<label>4 fields</label>
+					<input type="radio" id="radio2" name="number-of-fields" onclick="changeFieldsTo3()" />
+					<label>3 fields</label>
+				</form>
+				
+						
+				<form method="POST" enctype="multipart/form-data" id="fileUploadForm1">
+					<div id="btn1upload" class="btn-property btn-upload" >
+						<input type="file" name="file"/>
+					</div>
+					<div class="submit" >
+						<input type="submit" value="set" id="btnSubmit1" />
+					</div>
+					<div id="err1" class="error"></div>
+				</form>
+				<form method="POST" enctype="multipart/form-data" id="fileUploadForm2">
+					<div id="btn2upload" class="btn-property btn-upload">
+						<input type="file" name="file" />
+					</div>
+					<div class="submit">
+						<input type="submit" value="set" id="btnSubmit2" />
+					</div>
+					<div id="err2" class="error"></div>
+				</form>
+				<form method="POST" enctype="multipart/form-data" id="fileUploadForm3">
+					<div id="btn3upload" class="btn-property btn-upload">
+						<input type="file" name="file"/>
+					</div>
+					<div class="submit">
+						<input type="submit" value="set" id="btnSubmit3" />
+					</div>
+					<div id="err3" class="error"></div>
+				</form>
+				<form method="POST" enctype="multipart/form-data" id="fileUploadForm4">
+					<div id="btn4upload" class="btn-property btn-upload">
+						<input type="file" name="file" />
+					</div>
+					<div class="submit">
+						<input type="submit" value="set" id="btnSubmit4" />
+					</div>
+					<div id="err4" class="error"></div>
+				</form>
+				<div>
+					<button id="download" class="btn-property" onclick="downloadCollage()">Download collage</button>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+<th:block th:replace="fragments/footer :: include-footer" />
+
+</body>
+</html>
